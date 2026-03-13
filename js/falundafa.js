@@ -187,3 +187,18 @@
     const sec = Math.floor(seconds % 60);
     return `${min}:${sec < 10 ? '0'+sec : sec}`;
   }
+  
+// Nhạc nền khi vào trang
+window.addEventListener("load", () => {
+
+  player.src = "https://media.falundafa.org/media1/media/dafa/music/128k/PuDu.mp3"; // bài muốn phát
+  player.loop = true;
+  player.volume = 0.35; // âm lượng nhẹ
+
+  player.play().catch(()=>{});
+
+  nowTitle.textContent = "Pu Du (nhạc nền)";
+  playing = true;
+  updatePlayBtn();
+
+});
