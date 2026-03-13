@@ -1,0 +1,176 @@
+:root{
+--text:#e6eef8;
+--muted:#9aa4b2;
+}
+
+*{
+box-sizing:border-box;
+}
+
+body{
+margin:0;
+font-family:Inter,system-ui,sans-serif;
+
+background:url('icon/vutruhoc.jpg') no-repeat center center fixed;
+background-size:cover;
+
+color:var(--text);
+
+min-height:100vh;
+display:flex;
+flex-direction:column;
+
+overflow-x:hidden;
+}
+
+
+/* =========================
+HEADER
+========================= */
+
+.site-header{
+text-align:center;
+padding:28px 20px;
+}
+
+.site-header h1{
+margin:0;
+font-size:clamp(22px,4vw,38px);
+letter-spacing:.5px;
+}
+
+.tagline{
+margin-top:6px;
+color:var(--muted);
+font-size:16px;
+}
+
+
+/* =========================
+FOOTER
+========================= */
+
+.site-footer{
+text-align:center;
+padding:18px;
+margin-top:auto;
+color:var(--muted);
+font-size:14px;
+}
+
+
+/* =========================
+FLOATING BUTTON
+========================= */
+
+.floating-btn{
+
+position:fixed;
+
+width:60px;
+height:60px;
+
+border-radius:50%;
+
+cursor:pointer;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:1000;
+
+box-shadow:0 4px 12px rgba(0,0,0,.5);
+
+transition:transform .2s;
+
+}
+
+.floating-btn:hover{
+
+transform:scale(1.12);
+
+}
+
+
+
+/* =========================
+STAR LAYER
+========================= */
+
+#star-layer{
+
+position:fixed;
+inset:0;
+
+pointer-events:none;
+
+z-index:999;
+
+overflow:hidden;
+
+}
+
+.flying-star{
+
+position:absolute;
+
+width:16px;
+height:16px;
+
+border-radius:50%;
+
+background:
+radial-gradient(
+circle,
+#fff 0%,
+rgba(255,255,255,.7) 60%,
+transparent 100%
+);
+
+opacity:.9;
+
+pointer-events:auto;
+
+filter:drop-shadow(0 0 12px white);
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+opacity:.6;
+transform:scale(1);
+}
+
+50%{
+opacity:1;
+transform:scale(1.5);
+}
+
+}
+
+.flying-star.twinkle{
+animation:twinkle 1s infinite;
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media (max-width:600px){
+
+.site-header h1{
+font-size:24px;
+}
+
+.tagline{
+font-size:14px;
+}
+
+.floating-btn{
+width:52px;
+height:52px;
+}
+
+}
