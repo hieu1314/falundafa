@@ -174,3 +174,132 @@ height:52px;
 }
 
 }
+/* =========================
+BOOK LAYER
+========================= */
+
+#book-layer{
+
+position:fixed;
+inset:0;
+
+pointer-events:none;
+
+z-index:998;
+
+overflow:hidden;
+
+}
+
+/* =========================
+BOOK LAYER
+========================= */
+
+#book-layer{
+
+position:fixed;
+inset:0;
+
+pointer-events:none;
+
+z-index:998;
+
+overflow:hidden;
+
+}
+
+
+/* =========================
+HEAVEN BOOK
+========================= */
+
+.flying-book{
+
+position:absolute;
+
+width:120px;
+height:170px;
+
+pointer-events:auto;
+cursor:pointer;
+
+transform-style:preserve-3d;
+
+animation:bookFloat 4s ease-in-out infinite;
+
+filter:
+
+drop-shadow(0 0 10px gold)
+drop-shadow(0 0 25px gold)
+drop-shadow(0 0 50px rgba(255,215,0,.9));
+
+}
+
+/* bìa sách thật */
+
+.flying-book::before{
+
+content:"";
+
+position:absolute;
+inset:0;
+
+border-radius:6px;
+
+background:url("icon/chuyenphapluan.jpg") center/cover no-repeat;
+
+box-shadow:
+0 0 20px gold,
+0 0 50px gold;
+
+transform:rotateY(-20deg);
+
+}
+
+/* pháp luân bên trong */
+
+.book-falun{
+
+position:absolute;
+
+left:50%;
+top:50%;
+
+width:36px;
+height:36px;
+
+transform:translate(-50%,-50%);
+
+background:url("icon/falun-logo.jpg") center/contain no-repeat;
+
+animation:falunSpin 12s linear infinite;
+
+filter:
+
+drop-shadow(0 0 6px rgb(197, 183, 105))
+drop-shadow(0 0 12px gold);
+
+display:none;
+
+}
+
+
+/* bay nhẹ */
+
+@keyframes bookFloat{
+
+0%{transform:translateY(0) rotateZ(0deg)}
+50%{transform:translateY(-12px) rotateZ(4deg)}
+100%{transform:translateY(0) rotateZ(0deg)}
+
+}
+
+
+/* xoay pháp luân */
+
+@keyframes falunSpin{
+
+from{transform:translate(-50%,-50%) rotate(0deg)}
+to{transform:translate(-50%,-50%) rotate(360deg)}
+
+}
