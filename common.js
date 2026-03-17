@@ -294,10 +294,14 @@ document.head.appendChild(style)
 const starLinks=[
 
 "https://vaotrlttfbkoxnuimdnf.supabase.co/storage/v1/object/public/family-photos/uploadrecent/thuctinh1.mp4",
-
+"https://vaotrlttfbkoxnuimdnf.supabase.co/storage/v1/object/public/family-photos/falundafa/note1.png",
+"https://vaotrlttfbkoxnuimdnf.supabase.co/storage/v1/object/public/family-photos/falundafa/note2.png",
+"https://vaotrlttfbkoxnuimdnf.supabase.co/storage/v1/object/public/family-photos/falundafa/note3.png",
+"https://vi.falundafa.org/book/zfl2_hv_html/zfl2_11_hv.html",
 "https://vi.minghui.org/news/241240-vi-sao-co-nhan-loai.html",
-
-"https://vaotrlttfbkoxnuimdnf.supabase.co/storage/v1/object/public/family-photos/uploadrecent/luubut.jpg"
+"https://vi.minghui.org/news/271809-vi-sao-xa-hoi-nhan-loai-la-me.html",
+"https://vi.minghui.org/news/245004-tai-sao-can-phai-cuu-do-chung-sinh.html",
+"https://vi.minghui.org/news/266671-kinh-tinh.html"
 
 ]
 
