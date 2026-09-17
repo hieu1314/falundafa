@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f4f7;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   MÀN HÌNH GIỚI THIỆU
+   ========================= */
+
+.welcome-box {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-box h1 {
+    margin-bottom: 20px;
+}
+
+.welcome-box p {
+    color: #666;
+}
+
+
+/* =========================
+   CÁC NÚT
+   ========================= */
+
+#startBtn,
+#nextBtn {
+    margin-top: 20px;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#startBtn:hover,
+#nextBtn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   MÀN HÌNH CÂU HỎI
+   ========================= */
+
+.quiz-box {
+    display: none;
+
+    width: 100%;
+    max-width: 650px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.question-number {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.quiz-box h2 {
+    margin-top: 0;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   ĐÁP ÁN
+   ========================= */
+
+.answers {
+    margin-top: 25px;
+}
+
+.answer {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.answer:hover {
+    background: #f5f7ff;
+}
+
+.answer input {
+    width: 18px;
+    height: 18px;
+}
+
+.answer span {
+    font-size: 16px;
+}
+
+/* =========================
+   MÀN HÌNH KẾT QUẢ
+   ========================= */
+
+.result-box {
+    display: none;
+
+    width: 100%;
+    max-width: 650px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.result-box h1 {
+    margin-bottom: 20px;
+}
+
+.result-box p {
+    color: #666;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+#restartBtn {
+    margin-top: 20px;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#restartBtn:hover {
+    background: #1d4ed8;
+}
+
+#homeBtn {
+    margin-top: 12px;
+
+    padding: 14px 30px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #64748b;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#homeBtn:hover {
+    background: #475569;
+}

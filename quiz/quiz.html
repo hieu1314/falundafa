@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khảo sát trực tuyến</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- =========================
+             MÀN HÌNH GIỚI THIỆU
+             ========================= -->
+
+        <div class="welcome-box" id="welcomeBox">
+            <h1>KHẢO SÁT TRỰC TUYẾN</h1>
+            <p>
+                Chào mừng bạn đến với khảo sát.
+            </p>
+            <p>
+                Vui lòng trả lời các câu hỏi bên dưới.
+            </p>
+            <button id="startBtn">
+                Bắt đầu khảo sát
+            </button>
+        </div>
+
+        <!-- =========================
+             MÀN HÌNH CÂU HỎI
+             ========================= -->
+
+        <div class="quiz-box" id="quizBox">
+
+            <div class="question-number" id="questionNumber">
+                Câu 1 / 5
+            </div>
+            <h2 id="questionText">
+                Câu hỏi
+            </h2>
+            <div class="answers" id="answers">
+            </div>
+            <button id="nextBtn">
+                Tiếp tục
+            </button>
+        </div>
+
+        <!-- =========================
+             MÀN HÌNH KẾT QUẢ
+             ========================= -->
+
+        <div class="result-box" id="resultBox">
+            <h1>🎉 Hoàn thành khảo sát!</h1>
+
+            <p>
+                Cảm ơn bạn đã hoàn thành tất cả các câu hỏi.
+            </p>
+
+            <p id="resultText"></p>
+
+            <button id="restartBtn">
+                Làm lại khảo sát
+            </button>
+
+            <button id="homeBtn">
+                Về trang chính
+            </button>
+        </div>
+
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
